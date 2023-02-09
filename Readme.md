@@ -15,7 +15,7 @@ images, such as plastic, paper, metal, etc. The goal is to create a model that c
 sorting efficiency and reduce the amount of waste sent to landfills.
 
 ## Solutions :
-- An AI powered smart trashcan that segregates trash without human intervention & improves waste management operations
+- An AI powered smart trashcan / Robot / Machine that segregates trash without human intervention & improves waste management operations
 
 ## About :
 GOSS is a Machine learning model that can accurately detect
