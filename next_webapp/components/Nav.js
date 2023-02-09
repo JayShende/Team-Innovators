@@ -2,15 +2,7 @@ import { Navbar, Dropdown, Image, Button, Link } from "@nextui-org/react";
 import style from "../styles/nav.module.css";
 
 export default function Nav() {
-  const collapseItems = [
-    "Home",
-    "About Us",
-    "For Student Startups",
-    "For Students",
-    "Events & Programs",
-    "For Corporate Startups",
-    "Premium Membership",
-  ];
+  const collapseItems = ["Home", "Guide", "About Us", "Contact Us"];
   const collapseItemsLink = [
     "/",
     "/aboutUs",
@@ -34,8 +26,8 @@ export default function Nav() {
         <Navbar.Toggle showIn="xs" />
         <Navbar.Content enableCursorHighlight activeColor="white" hideIn="xs">
           <Navbar.Link href={"/"}>Home</Navbar.Link>
-          <Navbar.Item>
-            <Dropdown>
+          {/* <Navbar.Item> */}
+          {/* <Dropdown>
               <Dropdown.Button auto light ripple={false}>
                 Why Startic Field?
               </Dropdown.Button>
@@ -64,10 +56,11 @@ export default function Nav() {
                   </Link>
                 </Dropdown.Item>
               </Dropdown.Menu>
-            </Dropdown>
-          </Navbar.Item>
-          <Navbar.Link href="./aboutUs">About Us</Navbar.Link>
-          <Navbar.Link href="./premium">Premium Membership</Navbar.Link>
+            </Dropdown> */}
+          {/* </Navbar.Item> */}
+          <Navbar.Link href="#Guide">Guide</Navbar.Link>
+          <Navbar.Link href="#About Us">About Us</Navbar.Link>
+          <Navbar.Link href="#Contact Us">Contact Us</Navbar.Link>
           <Navbar.Link href="./sign-in">
             <Button className="w3-large" flat color="success" auto>
               Sign In
