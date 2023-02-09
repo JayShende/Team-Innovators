@@ -16,7 +16,7 @@ sorting efficiency and reduce the amount of waste sent to landfills.
 
 ## Survey & Research :
 Recycling contamination occurs when waste is incorrectly disposed of — like recycling a pizza box with oil on it (compost). Or when waste is correctly disposed of but incorrectly prepared — like recycling unrinsed jam jars.
-Contamination is a huge problem in the recycling industry that can be mitigated with automated waste sorting. This is an application **optical sorting system**.
+Contamination is a huge problem in the recycling industry that can be mitigated with automated waste sorting. This is an application of **optical sorting system**.
 
 **Official numbers** say that we generate more than **62 million tonnes** of municipal solid waste but only **43 million tonnes** is collected. Of the 43 million tonnes collected, municipalities are forced to dump more than **31 million** in landfills due to its mixed nature.
 
