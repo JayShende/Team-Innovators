@@ -1,10 +1,7 @@
 import Head from "next/head";
-import FileUploader from "../components/uploadFile";
-import { Card, Spacer } from "@nextui-org/react";
-import Quotation from "@/components/Quotation";
-import { useState } from "react";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import { useEffect, useState } from "react";
 import StarticHero from "@/components/StarticHero";
+import DynamicHero from "@/components/DynamicHero";
 
 export default function Home() {
   const [quotation__text, setQuotation__text] = useState(0);
@@ -15,7 +12,13 @@ export default function Home() {
       console.log(quotation_index);
     }
   };
-  const [startic_hero, setStartic_hero] = useState(true);
+  const [startic_hero, setStartic_hero] = useState(false);
+  const [imgLink, setImgLink] = useState("");
+  useEffect(() => {
+    if (imgLink != "") {
+      setStartic_hero(false);
+    }
+  }, [imgLink]);
   return (
     <>
       <Head>
@@ -31,13 +34,13 @@ export default function Home() {
       {startic_hero ? (
         <StarticHero
           quotation__text={quotation__text}
-          setQuotation__text={setQuotation__text}
           quotation_index={quotation_index}
-          setQuotation__index={setQuotation__index}
           btnClick={btnClick}
+          imgLink={imgLink}
+          setImgLink={setImgLink}
         ></StarticHero>
       ) : (
-        <div></div>
+        <DynamicHero></DynamicHero>
       )}
     </>
   );

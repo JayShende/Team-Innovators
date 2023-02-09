@@ -5,10 +5,11 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 export default function StarticHero({
   quotation__text,
-  setQuotation__text,
   quotation_index,
-  setQuotation__index,
   btnClick,
+  imgLink,
+  setImgLink,
+  disableStarticHero,
 }) {
   return (
     <>
@@ -28,7 +29,11 @@ export default function StarticHero({
         <Spacer y={3} />
         <Card isHoverable css={{ mw: "400px", p: "$6", borderRadius: "100px" }}>
           <Card.Body onClick={btnClick}>
-            <FileUploader></FileUploader>
+            <FileUploader
+              setImgLink={setImgLink}
+              imgLink={imgLink}
+              disableStarticHero={disableStarticHero}
+            ></FileUploader>
           </Card.Body>
         </Card>
         <Spacer y={1} />

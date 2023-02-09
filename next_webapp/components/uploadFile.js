@@ -19,23 +19,37 @@ const options = {
   multi: false,
 };
 
-const FileUploader = () => (
-  <UploadButton
-    uploader={uploader}
-    options={options}
-    onComplete={(files) => {
-      alert(files.map((x) => x.originalFile.fileUrl).join("\n"));
-      console.log([0]);
-    }}
-  >
-    {({ onClick }) => (
-      <button className={styles.uploadImg} onClick={onClick}>
-        Upload Image...
-        <Spacer x={1} />
-        <i class="bx bxs-upvote"></i>
-      </button>
-    )}
-  </UploadButton>
-);
-
-export default FileUploader;
+export default function FileUploader({
+  setImgLink,
+  imgLink,
+  disableStarticHero,
+}) {
+  return (
+    <>
+      <UploadButton
+        uploader={uploader}
+        options={options}
+        onComplete={(files) => {
+          // Optional.
+          if (files.length === 0) {
+            console.log("No files selected.");
+          } else {
+            console.log("Files uploaded:");
+            let Link = files.map((f) => f.fileUrl);
+            setImgLink(Link[0]);
+            console.log(imgLink);
+            disableStarticHero;
+          }
+        }}
+      >
+        {({ onClick }) => (
+          <button className={styles.uploadImg} onClick={onClick}>
+            Upload Image...
+            <Spacer x={1} />
+            <i class="bx bxs-upvote"></i>
+          </button>
+        )}
+      </UploadButton>
+    </>
+  );
+}
