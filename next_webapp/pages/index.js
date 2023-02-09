@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Card isHoverable css={{ mw: "400px" }}>
+        <Card isHoverable css={{ mw: "400px", p: "$6", borderRadius: "100px" }}>
           <Card.Body>
             <FileUploader></FileUploader>
           </Card.Body>

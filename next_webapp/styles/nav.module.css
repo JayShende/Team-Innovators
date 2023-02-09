@@ -1,0 +1,11 @@
+.navParent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 89vw;
+    margin:auto;
+}
+
+.premium{
+    color: #17C964
+}

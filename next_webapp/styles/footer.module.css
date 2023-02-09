@@ -1,0 +1,151 @@
+.main{
+    background-color: #17C964;
+    width: 100vw;
+    padding: 7vh 7vw ;
+    backdrop-filter: blur(1px);
+}
+
+.infoSection{
+    display: flex;
+}
+
+.discription{
+    width: 35%;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.discription p{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.discriptionImage{
+    width: 200px;
+    margin: -16px;
+    padding: 0;
+}
+
+.links{
+    width: 55%;
+    margin-left: 10vw;
+    margin-top: 3.3vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.links p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.Items{
+    margin-top: 1vh;
+}
+
+.contactUs{
+    position: relative;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 4vh;
+}
+
+.socialIcons{
+    margin: -3px;
+    padding: 8px;
+    height: 50px;
+}
+
+.linkSection{
+    width: 130px;
+}
+
+
+.otherLinks{
+    width: 130px;
+}
+
+
+.contactUs{
+    width: 180px;
+    z-index: 1000;
+}
+
+
+.bottomSection{
+    text-align: center;
+    position: relative;
+}
+
+
+.bottomSection p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.bottomImage{
+    width: 50vw;
+}
+
+.devlooper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vh auto 0 auto;
+}
+
+.devlooperImage{
+    width: 100px;
+    margin: -5px 4px 0;
+    padding: 0;
+}
+
+.devlooperLink{
+    margin-left: 6px;
+}
+
+@media only screen and (max-width: 900px) {
+    .main{
+        padding: 7vh 7vw ;
+    }
+
+    .infoSection{
+        flex-direction: column;
+    }
+    .discription{
+        width: 100%;
+        margin-bottom: 4vh;
+    }
+    .links{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2vh;
+    }
+
+    .linkSection{
+        margin-top: 2vh;
+    }
+
+    .otherLinks{
+        margin-top: 2vh;
+    }
+
+    .contactUs{
+        margin-top: 2vh;
+    }
+    .bottomImage{
+        margin-top: -10vh;
+        margin-bottom: -10vh;
+        height: 50vh;
+        width: 100vw;
+    }
+    .devlooper{
+        flex-direction: column;
+    }
+    .devlooperImage{
+        margin-top: 5px;
+    }
+}

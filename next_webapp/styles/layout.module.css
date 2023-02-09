@@ -1,0 +1,85 @@
+.groupOne{
+    position: absolute;
+    bottom: -40vh;
+    left: 0;
+    height: 50vh;
+    display: block;
+}
+
+.groupTwo{
+    position: absolute;
+    display: block;
+    width: 362px;
+    height: 643px;
+    top: -90vh;
+    right: 0;
+}
+
+.groupThree{
+    position: absolute;
+    bottom: -10vh;
+    right: 2vw;
+    height: 35vh;
+    display: block
+}
+
+.groupFour{
+    content: url("/group1.png");
+    position: absolute;
+    top: -0.3vw;
+    left: -0.3vw;
+    width: 100vw;
+    height: auto;
+}
+
+.groupFourSpace{
+    height: 80vh
+}
+
+.groupFive{
+    content: url("/group2.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: auto;
+}
+
+.groupFiveSpace{
+    height: 100vh
+}
+
+@media only screen and (max-width: 600px) {
+    .groupOne{
+        display: none;
+    }
+    .groupTwo{
+        display: none;
+    }
+    .groupThree{
+        display: none;
+    }
+    .groupFour{
+        content: url("/group1mob.png");
+        top: -11vh;
+        right: 0;
+    }
+    .groupFourSpace{
+        height: 10vh;
+    }
+
+    .groupFive{
+        content: url("/group2mob.png");
+        position: absolute;
+        top: -5vh;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: auto;
+    }
+
+    .groupFiveSpace{
+        height:10vh
+    }
+}
