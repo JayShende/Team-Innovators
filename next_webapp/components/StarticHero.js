@@ -37,6 +37,7 @@ export default function StarticHero({
           quotation_index={quotation_index}
         ></Quotation>
       </main>
+      <Spacer y={3} />
     </>
   );
 }
