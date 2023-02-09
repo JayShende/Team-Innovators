@@ -14,6 +14,8 @@ machine learning model that can accurately detect and classify different types o
 images, such as plastic, paper, metal, etc. The goal is to create a model that can improve
 sorting efficiency and reduce the amount of waste sent to landfills.
 
+## Solutions :
+- An AI powered smart trashcan that segregates trash without human intervention & improves waste management operations
 
 ## About :
 GOSS is a Machine learning model that can accurately detect
@@ -24,7 +26,8 @@ and classify different types of waste in images, such as plastic, paper, metal, 
 
 "_Going beyond the value of Plastic_"
 
-## Solutions :
-- An AI powered smart trashcan that segregates trash without human intervention & improves waste management operations
+## Glimpses of our ML Model Working 
+![image](https://user-images.githubusercontent.com/77800620/217948136-32912386-4621-4c0c-983b-9086e98df5e2.png)
+
 
 ### Website Link : https://team-innovators-23.vercel.app/
