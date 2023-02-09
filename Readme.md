@@ -22,6 +22,8 @@ Contamination is a huge problem in the recycling industry that can be mitigated 
 
 
 ## Solutions :
+![image](https://user-images.githubusercontent.com/77800620/217951203-8d1fa7b4-1706-44dc-ba06-63e273ae4599.png)
+
 - An AI powered smart trashcan / Robot / Machine that segregates trash without human intervention & improves waste management operations
 
 ## About :
