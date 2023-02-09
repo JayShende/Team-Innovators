@@ -3,6 +3,8 @@ import FileUploader from "../components/uploadFile";
 import { Card, Spacer } from "@nextui-org/react";
 import Quotation from "@/components/Quotation";
 import { useState } from "react";
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import StarticHero from "@/components/StarticHero";
 
 export default function Home() {
   const [quotation__text, setQuotation__text] = useState(0);
@@ -13,6 +15,7 @@ export default function Home() {
       console.log(quotation_index);
     }
   };
+  const [startic_hero, setStartic_hero] = useState(true);
   return (
     <>
       <Head>
@@ -25,18 +28,17 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <main>
-        <Card isHoverable css={{ mw: "400px", p: "$6", borderRadius: "100px" }}>
-          <Card.Body onClick={btnClick}>
-            <FileUploader></FileUploader>
-          </Card.Body>
-        </Card>
-        <Spacer y={1} />
-        <Quotation
+      {startic_hero ? (
+        <StarticHero
           quotation__text={quotation__text}
+          setQuotation__text={setQuotation__text}
           quotation_index={quotation_index}
-        ></Quotation>
-      </main>
+          setQuotation__index={setQuotation__index}
+          btnClick={btnClick}
+        ></StarticHero>
+      ) : (
+        <div></div>
+      )}
     </>
   );
 }

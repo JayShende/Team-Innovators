@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.2",
     "@next/font": "13.1.6",
     "@nextui-org/react": "^1.0.0-beta.12",
     "eslint": "8.33.0",
