@@ -29,7 +29,7 @@ export default function Nav() {
             w: "150px",
           }}
         >
-          <Image src="logo.svg" alt=""></Image>
+          <Image src="logo.png" alt=""></Image>
         </Navbar.Brand>
         <Navbar.Toggle showIn="xs" />
         <Navbar.Content enableCursorHighlight activeColor="white" hideIn="xs">

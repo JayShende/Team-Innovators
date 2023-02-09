@@ -1,6 +1,7 @@
 import { Uploader } from "uploader"; // Installed by "react-uploader".
 import { UploadButton } from "react-uploader";
 import styles from "../styles/uploadImg.module.css";
+import { Spacer } from "@nextui-org/react";
 
 // Initialize once (at the start of your app).
 const uploader = Uploader({
@@ -30,6 +31,8 @@ const FileUploader = () => (
     {({ onClick }) => (
       <button className={styles.uploadImg} onClick={onClick}>
         Upload Image...
+        <Spacer x={1} />
+        <i class="bx bxs-upvote"></i>
       </button>
     )}
   </UploadButton>

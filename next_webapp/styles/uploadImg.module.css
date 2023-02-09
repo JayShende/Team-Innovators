@@ -10,4 +10,11 @@
     font-size: 2vh;
     color: #fff;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadImg i{
+    font-size: 2.5vh;
 }
