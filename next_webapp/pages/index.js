@@ -1,5 +1,5 @@
 import Head from "next/head";
-import FileUploader from "./uploadFile";
+import FileUploader from "../components/uploadFile";
 import { Card, Text } from "@nextui-org/react";
 
 export default function Home() {
