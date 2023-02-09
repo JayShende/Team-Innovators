@@ -7,8 +7,24 @@
 - [Sudhanshu Nerkar](https://github.com/Sudnerkar23)
 - [Adarsh Jena](https://github.com/adarshnjena)
 
+## Problem Statement :
+Recycling facilities often have a large volume of waste to sort through, and manually sorting
+through this waste can be time-consuming and prone to errors. The problem is to develop a
+machine learning model that can accurately detect and classify different types of waste in
+images, such as plastic, paper, metal, etc. The goal is to create a model that can improve
+sorting efficiency and reduce the amount of waste sent to landfills.
+
+
 ## About :
 GOSS is a Machine learning model that can accurately detect
 and classify different types of waste in images, such as plastic, paper, metal, etc.
+
+**Revamping Waste Management Infrastructure**
+**Using Technological interventions to maximize resource recovery from bulk trash**
+
+"_Going beyond the value of Plastic_"
+
+## Solutions :
+- An AI powered smart trashcan that segregates trash without human intervention & improves waste management operations
 
 ### Website Link : https://team-innovators-23.vercel.app/
