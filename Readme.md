@@ -7,5 +7,8 @@
 - [Sudhanshu Nerkar](https://github.com/Sudnerkar23)
 - [Adarsh Jena](https://github.com/adarshnjena)
 
+## About :
+GOSS is a Machine learning model that can accurately detect
+and classify different types of waste in images, such as plastic, paper, metal, etc.
 
 ### Website Link : https://team-innovators-23.vercel.app/
