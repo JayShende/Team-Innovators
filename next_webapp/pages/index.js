@@ -12,7 +12,7 @@ export default function Home() {
       console.log(quotation_index);
     }
   };
-  const [startic_hero, setStartic_hero] = useState(false);
+  const [startic_hero, setStartic_hero] = useState(true);
   const [imgLink, setImgLink] = useState("");
   useEffect(() => {
     if (imgLink != "") {
@@ -25,7 +25,7 @@ export default function Home() {
         <title>GOSS</title>
         <meta name="description" content="Team-Innovators" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <link
           href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
           rel="stylesheet"
