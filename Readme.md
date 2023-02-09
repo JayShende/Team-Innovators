@@ -26,7 +26,7 @@ and classify different types of waste in images, such as plastic, paper, metal, 
 
 "_Going beyond the value of Plastic_"
 
-## Glimpses of our ML Model Working 
+## Glimpses of our Website :
 ![image](https://user-images.githubusercontent.com/77800620/217948136-32912386-4621-4c0c-983b-9086e98df5e2.png)
 
 
