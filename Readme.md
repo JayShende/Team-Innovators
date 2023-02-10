@@ -38,5 +38,6 @@ and classify different types of waste in images, such as plastic, paper, metal, 
 ## Glimpses of our Website :
 ![image](https://user-images.githubusercontent.com/77800620/217948136-32912386-4621-4c0c-983b-9086e98df5e2.png)
 
+![image](https://user-images.githubusercontent.com/76236137/217986314-5684e473-cf3e-4e00-8bee-9ef6d14872c1.png)
 
 ### Website Link : https://team-innovators-23.vercel.app/
