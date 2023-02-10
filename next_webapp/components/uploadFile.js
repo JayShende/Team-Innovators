@@ -22,7 +22,8 @@ const options = {
 export default function FileUploader({
   setImgLink,
   imgLink,
-  disableStarticHero,
+  setGarbageName,
+  garbageName,
 }) {
   return (
     <>
@@ -30,15 +31,20 @@ export default function FileUploader({
         uploader={uploader}
         options={options}
         onComplete={(files) => {
+          console.log(files);
           // Optional.
           if (files.length === 0) {
             console.log("No files selected.");
           } else {
             console.log("Files uploaded:");
             let Link = files.map((f) => f.fileUrl);
+            let originalName = files.map((f) => f.originalFile.file.name);
+            let FileName = originalName[0];
+            let finalGarbageName = FileName.replace(/\.[^/.]+$/, "");
+            console.log(finalGarbageName);
             setImgLink(Link[0]);
+            setGarbageName(finalGarbageName);
             console.log(imgLink);
-            disableStarticHero;
           }
         }}
       >

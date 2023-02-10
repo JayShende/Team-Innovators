@@ -9,7 +9,8 @@ export default function StarticHero({
   btnClick,
   imgLink,
   setImgLink,
-  disableStarticHero,
+  setGarbageName,
+  garbageName,
 }) {
   return (
     <>
@@ -32,7 +33,8 @@ export default function StarticHero({
             <FileUploader
               setImgLink={setImgLink}
               imgLink={imgLink}
-              disableStarticHero={disableStarticHero}
+              setGarbageName={setGarbageName}
+              garbageName={garbageName}
             ></FileUploader>
           </Card.Body>
         </Card>

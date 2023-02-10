@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import styles from "../styles/dynamic.module.css";
 import { Player } from "@lottiefiles/react-lottie-player";
 
-export default function DynamicHero({ imgLink }) {
+export default function DynamicHero({ imgLink, garbageName }) {
   const quotation__text = [
     "Garbage classification reduces the mutual pollution between different garbage, which is beneficial to the recycling of materials.",
     "Garbage classification is conducive to the separation of ecological waste and non-ecological waste, reducing the difficulty of waste disposal.",
@@ -39,7 +39,7 @@ export default function DynamicHero({ imgLink }) {
             }}
             weight="bold"
           >
-            Plastic
+            {garbageName}
           </Text>
           <Spacer y={1} />
           <Text size="$2xl">

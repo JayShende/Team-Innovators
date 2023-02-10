@@ -15,8 +15,9 @@ export default function Home() {
   };
   const [startic_hero, setStartic_hero] = useState(true);
   const [imgLink, setImgLink] = useState("");
+  const [garbageName, setGarbageName] = useState("");
   useEffect(() => {
-    if (imgLink != "") {
+    if (imgLink != "" && garbageName != "") {
       setStartic_hero(false);
     }
   }, [imgLink]);
@@ -40,9 +41,11 @@ export default function Home() {
           btnClick={btnClick}
           imgLink={imgLink}
           setImgLink={setImgLink}
+          setGarbageName={setGarbageName}
+          garbageName={garbageName}
         ></StarticHero>
       ) : (
-        <DynamicHero imgLink={imgLink}></DynamicHero>
+        <DynamicHero imgLink={imgLink} garbageName={garbageName}></DynamicHero>
       )}
 
       <Spacer y={3} />
