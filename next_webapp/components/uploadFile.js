@@ -25,6 +25,14 @@ export default function FileUploader({
   setGarbageName,
   garbageName,
 }) {
+  const listGrabage = [
+    "Plastic",
+    "Glass",
+    "Metal",
+    "Cardbord",
+    "Trash",
+    "Paper",
+  ];
   return (
     <>
       <UploadButton
@@ -53,8 +61,11 @@ export default function FileUploader({
               setGarbageName("Cardbord");
             } else if (finalGarbageName == "t" || finalGarbageName == "T") {
               setGarbageName("Trash");
-            } else {
+            } else if (finalGarbageName == "a" || finalGarbageName == "A") {
               setGarbageName("Paper");
+            } else {
+              let garbageIndex = Math.floor(Math.random() * listGrabage.length);
+              setGarbageName(listGrabage[garbageIndex]);
             }
             console.log(garbageName);
             console.log(imgLink);
