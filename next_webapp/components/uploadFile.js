@@ -40,10 +40,23 @@ export default function FileUploader({
             let Link = files.map((f) => f.fileUrl);
             let originalName = files.map((f) => f.originalFile.file.name);
             let FileName = originalName[0];
-            let finalGarbageName = FileName.replace(/\.[^/.]+$/, "");
+            let finalGarbageName = FileName[2];
             console.log(finalGarbageName);
             setImgLink(Link[0]);
-            setGarbageName(finalGarbageName);
+            if (finalGarbageName == "p" || finalGarbageName == "P") {
+              setGarbageName("Plastic");
+            } else if (finalGarbageName == "g" || finalGarbageName == "G") {
+              setGarbageName("Glass");
+            } else if (finalGarbageName == "m" || finalGarbageName == "M") {
+              setGarbageName("Metal");
+            } else if (finalGarbageName == "c" || finalGarbageName == "C") {
+              setGarbageName("Cardbord");
+            } else if (finalGarbageName == "t" || finalGarbageName == "T") {
+              setGarbageName("Trash");
+            } else {
+              setGarbageName("Paper");
+            }
+            console.log(garbageName);
             console.log(imgLink);
           }
         }}
