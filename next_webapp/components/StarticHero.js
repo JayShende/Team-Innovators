@@ -2,7 +2,6 @@ import FileUploader from "../components/uploadFile";
 import { Card, Spacer } from "@nextui-org/react";
 import Quotation from "@/components/Quotation";
 import { Player } from "@lottiefiles/react-lottie-player";
-import Guide from "@/components/Guide";
 
 export default function StarticHero({
   quotation__text,
@@ -42,7 +41,6 @@ export default function StarticHero({
           quotation__text={quotation__text}
           quotation_index={quotation_index}
         ></Quotation>
-        <Guide></Guide>
       </main>
     </>
   );
