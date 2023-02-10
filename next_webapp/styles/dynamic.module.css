@@ -1,3 +1,38 @@
-.logo{
-    width: 1vw;
+.disc{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 70vw;
+    text-align: center;
 }
+
+.discImage{
+    width: 30vw;
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-left: -10vh;
+    border-radius: 4vh;
+  }
+
+
+  
+  .discText{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 35vw;
+    text-align: start;
+  }
+
+  .loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+  }

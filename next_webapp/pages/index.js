@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import StarticHero from "@/components/StarticHero";
 import DynamicHero from "@/components/DynamicHero";
+import { Spacer } from "@nextui-org/react";
 
 export default function Home() {
   const [quotation__text, setQuotation__text] = useState(0);
@@ -19,6 +20,7 @@ export default function Home() {
       setStartic_hero(false);
     }
   }, [imgLink]);
+
   return (
     <>
       <Head>
@@ -40,8 +42,10 @@ export default function Home() {
           setImgLink={setImgLink}
         ></StarticHero>
       ) : (
-        <DynamicHero></DynamicHero>
+        <DynamicHero imgLink={imgLink}></DynamicHero>
       )}
+
+      <Spacer y={3} />
     </>
   );
 }
